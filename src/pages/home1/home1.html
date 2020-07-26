@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar colour="primary">
+    <ion-title>
+        Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+  <ion-row>
+    <ion-col>
+      <div>
+        <img src="assets/ourIcon/image12.jpg">
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <img src="assets/ourIcon/image14.jpg">
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <img src="assets/ourIcon/image13.jpg">
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <img src="assets/ourIcon/image15.jpg">
+      </div>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+  <ion-row>
+    <img src="assets/ourIcon/image16.jpg">
+  </ion-row>
+
+
+  <ion-row>
+  <ion-slides autoplay="1000" loops="true" speed="1000" >
+
+    <ion-slide *ngFor ="let image of imageArray">
+      <img src="{{image.image}}"/>
+    </ion-slide>
+
+  </ion-slides>
+</ion-row>
+<h5 (click)="viewmore()">View more</h5>
+</ion-content>

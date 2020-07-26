@@ -1,0 +1,159 @@
+
+<ion-header>
+  <ion-navbar color ="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      HappyShop
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page" class="bg-style" padding >
+
+  <ion-row>
+    <ion-slides autoplay="1000" loops="true" speed="1000" >
+      <ion-slide *ngFor ="let image of imageArray">
+        <img src="{{image.image}}"/>
+      </ion-slide>
+      </ion-slides>
+</ion-row>
+
+    <section text-center margin-bottom>
+
+      <h1 style="font: size 2;" style="color:rgb(9, 10, 10)" no-margin >Products</h1>
+      </section>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+      <ion-card text-center padding >
+        <img src="assets/ourIcon/prod1.jpg"/>
+        <ion-fab top right>
+          <button ion-fab (click)="showDescription()">
+            <ion-icon name="md-add-circle"></ion-icon>
+          </button>
+        </ion-fab>
+        <ion-icon name=""></ion-icon>
+          <div class="card-title">Killer Men Maroon Bomber Jacket</div><br>
+          <div class="card-subtitle"><h1>$749</h1></div>
+        </ion-card>
+      </ion-col>
+
+        <ion-col col-12>
+          <ion-card text-center padding >
+            <img src="assets/ourIcon/prod2.jpeg">
+            <ion-fab top right>
+              <button ion-fab (click)="showDescription()">
+                <ion-icon name="md-add-circle"></ion-icon>
+              </button>
+            </ion-fab>
+            <ion-icon name=""></ion-icon>
+            <ion-fab top right>
+              <button ion-fab (click)="showDescription()">
+                <ion-icon name="md-add-circle"></ion-icon>
+              </button>
+            </ion-fab>
+            <div class="card-title">Kurti Plazo Dupatta set</div><br>
+            <div class="card-subtitle"><h1>$499</h1></div>
+            </ion-card>
+            </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col col-12>
+                <ion-card text-center padding >
+                  <img src="assets/ourIcon/prod3j.jpeg">
+                  <ion-fab top right>
+                    <button ion-fab (click)="showDescription()">
+                      <ion-icon name="md-add-circle"></ion-icon>
+                    </button>
+                  </ion-fab>
+                  <ion-icon name=""></ion-icon>
+                  <ion-fab top right>
+                    <button ion-fab (click)="showDescription()">
+                      <ion-icon name="md-add-circle"></ion-icon>
+                    </button>
+                  </ion-fab>
+                  <div class="card-title">Dinosaur Hunter T-Shirt For Kid</div><br>
+                  <div class="card-subtitle"><h1>$19</h1></div>
+              </ion-card>
+            </ion-col>
+              <ion-col col-12>
+          <ion-card text-center padding >
+            <img src="assets/ourIcon/prod4.jpeg">
+            <ion-fab top right>
+              <button ion-fab (click)="showDescription()">
+                <ion-icon name="md-add-circle"></ion-icon>
+              </button>
+            </ion-fab>
+            <ion-icon name=""></ion-icon>
+            <div class="card-title">Crazy Dog T-Shirt Womens Funny T Shirt</div><br>
+            <div class="card-subtitle"><h1>$21</h1></div>
+                  </ion-card>
+                  </ion-col>
+                  </ion-row>
+
+                  <ion-row>
+                    <ion-col col-12>
+                      <ion-card text-center padding >
+                        <img src="assets/ourIcon/prod5.jpeg">
+                        <ion-fab top right>
+                          <button ion-fab (click)="showDescription()">
+                            <ion-icon name="md-add-circle"></ion-icon>
+                          </button>
+                        </ion-fab>
+                        <ion-icon name=""></ion-icon>
+                        <div class="card-title">The blonde abroad knee high boots</div><br>
+                        <div class="card-subtitle"><h1>$120</h1></div>
+                    </ion-card>
+                  </ion-col>
+                    <ion-col col-12>
+                      <ion-card text-center padding >
+                        <img src="assets/ourIcon/prod6.jpeg">
+                        <ion-fab top right>
+                          <button ion-fab (click)="showDescription()">
+                            <ion-icon name="md-add-circle"></ion-icon>
+                          </button>
+                        </ion-fab>
+                        <ion-icon name=""></ion-icon>
+                        <div class="card-title">Nike Men Red Running Shoes</div><br>
+                        <div class="card-subtitle"><h1>$210</h1></div>
+                        </ion-card>
+                        </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                          <ion-col col-12>
+                            <ion-card text-center padding >
+                              <img src="assets/ourIcon/prod7.jpeg">
+                              <ion-fab top right>
+                                <button ion-fab (click)="showDescription()">
+                                  <ion-icon name="md-add-circle"></ion-icon>
+                                </button>
+                              </ion-fab>
+                              <ion-icon name=""></ion-icon>
+                              <div class="card-title">Apple Iphone 11 pro Max</div><br>
+                              <div class="card-subtitle"><h1>$1099</h1></div>
+                          </ion-card>
+                        </ion-col>
+                          <ion-col col-12>
+                            <ion-card text-center padding >
+                              <img src="assets/ourIcon/prod8.jpeg">
+                              <ion-fab top right>
+                                <button ion-fab (click)="showDescription()">
+                                  <ion-icon name="md-add-circle"></ion-icon>
+                                </button>
+                              </ion-fab>
+                              <ion-icon name=""></ion-icon>
+                              <div class="card-title">OnePlus 7T</div><br>
+                              <div class="card-subtitle"><h1>$549</h1></div>
+                              </ion-card>
+                              </ion-col>
+                         </ion-row>
+
+    </ion-grid>
+</ion-content>
